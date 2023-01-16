@@ -1,3 +1,4 @@
+# NOTICE: This lockfile contains some overrides from shard.override.yml
 version: 2.0
 shards:
   authentic:
@@ -20,13 +21,13 @@ shards:
     git: https://github.com/cadmiumcr/transliterator.git
     version: 0.1.0+git.commit.46c4c14594057dbcfaf27e7e7c8c164d3f0ce3f1
 
-  carbon:
+  carbon: # Overridden
     git: https://github.com/luckyframework/carbon.git
     version: 0.3.0
 
-  carbon_sendgrid_adapter:
-    git: https://github.com/luckyframework/carbon_sendgrid_adapter.git
-    version: 0.3.0
+  carbon_send_in_blue_adapter:
+    git: https://github.com/atnos/carbon_send_in_blue_adapter.git
+    version: 0.2.0+git.commit.8967b617de9c8d647723dfd0ed582460676cf44b
 
   cry:
     git: https://github.com/luckyframework/cry.git

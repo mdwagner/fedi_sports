@@ -8,7 +8,7 @@ targets:
   app:
     main: src/fedi_sports.cr
 
-crystal: 1.6.2
+crystal: 1.7.0
 
 dependencies:
   lucky:
@@ -20,9 +20,8 @@ dependencies:
   carbon:
     github: luckyframework/carbon
     version: ~> 0.3.0
-  carbon_sendgrid_adapter:
-    github: luckyframework/carbon_sendgrid_adapter
-    version: ~> 0.3.0
+  carbon_send_in_blue_adapter:
+    github: atnos/carbon_send_in_blue_adapter
   lucky_env:
     github: luckyframework/lucky_env
     version: ~> 0.1.4

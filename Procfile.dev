@@ -1,2 +1,2 @@
 web: lucky watch --reload-browser
-assets: npm run watch
+assets: lucky assets.watch
