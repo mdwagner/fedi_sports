@@ -9,5 +9,6 @@ class Assets::Compile < LuckyTask::Task
 
   def call
     # Execute your task here
+    puts "Compiled!"
   end
 end
