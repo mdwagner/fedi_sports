@@ -8,6 +8,9 @@ targets:
   app:
     main: src/fedi_sports.cr
 
+crystalline:
+  main: tasks.cr
+
 crystal: 1.7.0
 
 dependencies:
