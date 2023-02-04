@@ -18,7 +18,7 @@ abstract class AuthLayout
     html lang: "en" do
       mount Shared::LayoutHead, page_title: page_title
 
-      body do
+      body class: "x-cloak" do
         mount Shared::FlashMessages, context.flash
         content
       end

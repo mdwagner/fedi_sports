@@ -14,6 +14,9 @@ class SignIns::NewPage < AuthLayout
     link "Reset password", to: PasswordResetRequests::New
     text " | "
     link "Sign up", to: SignUps::New
+    tag "h1", class: "text-3xl font-bold underline" do
+      text "Hello World!"
+    end
   end
 
   private def sign_in_fields(op)

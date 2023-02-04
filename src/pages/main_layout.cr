@@ -29,7 +29,7 @@ abstract class MainLayout
     html lang: "en" do
       mount Shared::LayoutHead, page_title: page_title
 
-      body do
+      body class: "x-cloak" do
         mount Shared::FlashMessages, context.flash
         render_signed_in_user
         content
