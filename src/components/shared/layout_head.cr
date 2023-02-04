@@ -5,8 +5,8 @@ class Shared::LayoutHead < BaseComponent
     head do
       utf8_charset
       title "My App - #{@page_title}"
-      css_link asset("css/app.css")
-      js_link asset("js/app.js"), defer: "true"
+      app_css
+      app_js
       csrf_meta_tags
       responsive_meta_tag
 
@@ -14,6 +14,27 @@ class Shared::LayoutHead < BaseComponent
       # Will reload browser whenever files change.
       # See [docs]()
       live_reload_connect_tag
+    end
+  end
+
+  private def app_css
+    tag "style", media: "screen" do
+      raw <<-CSS
+      p {
+        color: #26b72b;
+      }
+      CSS
+    end
+  end
+
+  private def app_js
+    tag "script", defer: "true" do
+      raw <<-JS
+      //import Alpine from "alpinejs";
+      //window.Alpine = Alpine;
+      //Alpine.start();
+      console.log("hello world!");
+      JS
     end
   end
 end
