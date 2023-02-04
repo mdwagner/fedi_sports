@@ -2,7 +2,7 @@ require "./shards"
 require "./patches/no_manifest"
 
 # Load the asset manifest
-#Lucky::AssetHelpers.load_manifest "public/manifest.json"
+# Lucky::AssetHelpers.load_manifest "public/manifest.json"
 Lucky::AssetHelpers.no_manifest
 
 require "../config/server"

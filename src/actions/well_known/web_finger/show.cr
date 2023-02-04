@@ -17,13 +17,13 @@ class WellKnown::WebFinger < ApiAction
 
     json({
       "subject" => resource,
-      "links" => [
+      "links"   => [
         {
-          "rel" => "http://webfinger.net/rel/avatar",
+          "rel"  => "http://webfinger.net/rel/avatar",
           "href" => "http://www.example.com/~bob/bob.jpg",
         },
         {
-          "rel" => "http://webfinger.net/rel/profile-page",
+          "rel"  => "http://webfinger.net/rel/profile-page",
           "href" => "http://www.example.com/~bob/",
         },
       ],

@@ -12,7 +12,7 @@ class Home::Index < BrowserAction
       # Or maybe show signed out users a marketing page:
       #
       #   html Marketing::IndexPage
-      #html Lucky::WelcomePage
+      # html Lucky::WelcomePage
     end
   end
 end
