@@ -1,2 +1,20 @@
 #!/usr/bin/env bash
-echo "done!"
+
+main() {
+  old_="fedi_sports"
+  new_="$1"
+
+  sed -i "s/$old_/$new_/g" _README.md
+  sed -i "s/$old_/$new_/g" config/cookies.cr
+  sed -i "s/$old_/$new_/g" config/database.cr
+  sed -i "s/$old_/$new_/g" shard.yml
+  mv "src/$old_.cr" "src/$new_.cr"
+  rm README.md
+  mv _README.md README.md
+
+  echo "Please run:"
+  echo '$ git add .'
+  echo '$ git commit -m "Initial commit (from template)"'
+}
+
+main "$@"
