@@ -13,6 +13,7 @@ main() {
   mv _README.md README.md
 
   echo "Please run:"
+  echo '$ rm setup'
   echo '$ git add .'
   echo '$ git commit -m "Initial commit (from template)"'
 }
