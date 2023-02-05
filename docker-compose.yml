@@ -3,7 +3,7 @@ services:
   lucky:
     build:
       context: .
-      dockerfile: docker/development.dockerfile
+      dockerfile: Dockerfile
     environment:
       DATABASE_URL: postgres://lucky:password@postgres:5432/lucky
     volumes:

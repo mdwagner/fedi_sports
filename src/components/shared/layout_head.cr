@@ -20,17 +20,20 @@ class Shared::LayoutHead < BaseComponent
     end
   end
 
+  # TODO: run tailwindcss cli to generate compile-time classes for production
   private def tailwind_css
     tag "script",
       src: "https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"
   end
 
+  # TODO: vendor for production
   private def alpine_js
     tag "script",
       src: "https://unpkg.com/alpinejs@3.11.1/dist/cdn.min.js",
       defer: "true"
   end
 
+  # TODO: vendor for production
   private def htmx_js
     tag "script",
       src: "https://unpkg.com/htmx.org@1.8.5",
@@ -38,6 +41,7 @@ class Shared::LayoutHead < BaseComponent
       crossorigin: "anonymous"
   end
 
+  # TODO: use readfile macro (src/css/app.css) for production
   private def app_css
     tag "style", media: "screen" do
       raw <<-CSS
@@ -48,6 +52,7 @@ class Shared::LayoutHead < BaseComponent
     end
   end
 
+  # TODO: use readfile macro (src/js/app.js) for production
   private def app_js
     tag "script", defer: "true"
   end
