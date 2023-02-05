@@ -1,4 +1,4 @@
-database_name = "fedi_sports_#{LuckyEnv.environment}"
+database_name = "lucky_starter_template_#{LuckyEnv.environment}"
 
 AppDatabase.configure do |settings|
   if LuckyEnv.production?

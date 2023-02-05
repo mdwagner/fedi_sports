@@ -1,4 +1,4 @@
-# fedi_sports
+# lucky_starter_template
 
 This is a project written using [Lucky](https://luckyframework.org). Enjoy!
 

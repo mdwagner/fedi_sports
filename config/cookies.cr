@@ -1,7 +1,7 @@
 require "./server"
 
 Lucky::Session.configure do |settings|
-  settings.key = "_fedi_sports_session"
+  settings.key = "_lucky_starter_template_session"
 end
 
 Lucky::CookieJar.configure do |settings|

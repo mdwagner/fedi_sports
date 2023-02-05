@@ -1,4 +1,4 @@
-name: fedi_sports
+name: lucky_starter_template
 version: 0.1.0
 
 authors:
@@ -6,7 +6,7 @@ authors:
 
 targets:
   app:
-    main: src/fedi_sports.cr
+    main: src/lucky_starter_template.cr
 
 crystalline:
   main: tasks.cr

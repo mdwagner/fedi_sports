@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 main() {
-  old_="fedi_sports"
+  old_="lucky_starter_template"
   new_="$1"
 
   sed -i "s/$old_/$new_/g" _README.md
